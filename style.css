@@ -36,12 +36,6 @@ p {
 
 }	
 
-
-
-
-
-
-
 #main-headline {
 	background-color: #fe92c0;
 	font-size:65px;
@@ -70,5 +64,8 @@ p {
 	background-color: #f2c8da;
 	text-align: center;
 
+}
+#faq {
+	background-image: url("images/pinkbackground.png"); 
 }
 
