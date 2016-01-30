@@ -1,0 +1,397 @@
+html, body{
+   overflow-x: hidden;
+ }
+ img {
+ 	max-width: 100%;
+ 	height: auto;
+ }
+
+ /* GRID */
+ .container {
+   margin-right: auto;
+   margin-left: auto;
+   padding-left: 15px;
+   padding-right: 15px;
+   position: relative;
+ }
+ .container:before,
+ .container:after {
+   content: " ";
+   display: table;
+ }
+ .container:after {
+   clear: both;
+ }
+ .one-half, .one-third, .one-fourth {
+   width:96%;
+   float:left;
+   position:relative;
+   min-height: 1px;
+   margin:0 2% 20px;
+ }
+
+ @media (min-width: 768px) {
+   .container {
+     width: 750px;
+   }
+ }
+ @media (min-width: 992px) {
+   .container {
+     width: 970px;
+   }
+   .one-half {
+     width:46%;
+   }
+   .one-third {
+     width:29.33333%;
+   }
+   .one-fourth {
+     width:21%;
+   }
+ }
+
+ @media (min-width: 1200px) {
+   .container {
+     width: 1170px;
+   }
+ }
+
+ @media (min-width: 1824px) {
+   .container {
+     width: 1700px;
+ }
+}
+p, h3, h5 {
+	font-size: 24px;
+}
+h1, h2, h3, h5 {
+	font-family:"Varela Round", Helvetica, Arial, sans-serif;
+	font-weight:100;
+}
+h4, h6, p {
+	font-family: "Merriweather", Helvetica, Arial, serif;
+}
+h1 {
+	color: #fe92c0;
+	text-align: center;
+}
+h2{
+	font-size: 42px;
+	color: #974b6b;
+}
+h3 {
+	color: #ffffff;
+	text-align: center;
+}
+h4{
+	font-size: 15px;
+	color: #fe92c0;
+	text-align: center;
+	}
+h5 {
+	color: #fe92c0; 
+}
+h6 {
+	font-size: 24px;
+	color: #974b6b;
+}
+p {
+	color:#888888;
+}	
+nav ul li {
+	width:160px;
+}
+nav ul li:nth-child(2) {
+	margin-right:200px;
+}
+
+/*-----------------------------------------------------------*/
+/* HEADER SECTION */
+header {
+	border-bottom: 11px solid #fe92c0;
+	text-align: center;
+	z-index: 100;
+	height:100px;
+}
+header .logo {
+ z-index: 2;
+ position: absolute;
+ top:-26px;
+ right:0;
+ left:0;
+}
+header nav {
+	position:relative;
+	font-family:"Varela Round", Helvetica, Arial, sans-serif;
+	z-index: 300;
+}
+nav ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}
+header nav ul li {
+	display:inline-block;
+	vertical-align: top;
+	padding-top: 45px;
+}
+header nav ul li a {
+	font-family:"Varela Round", Helvetica, Arial, sans-serif;
+	color:#974b6b;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.nav-btn {
+	background: #e0ca8d;
+	padding:0.4em 0.8em;
+	color:#fff;
+}
+.nav-btn:hover {
+	/* Add hover color */
+}
+
+/*-----------------------------------------------------------*/
+/* HERO SECTION */
+.hero {
+	z-index: -1;
+	background:url('../images/hero.jpg') top center no-repeat;
+	background-size:cover;
+	width:100%;
+	min-height: 700px;
+	max-height: 730px;
+	position:relative;
+	display: block;
+}
+.hero h1 {
+	background-color: rgba(254, 146, 192, 0.8);
+	font-size:65px;
+	color:#ffffff;
+	text-align: center;
+	position:relative;
+	top:300px;
+	width:90%;
+	margin:0 auto;
+	padding:0.5em;
+}
+
+/*-----------------------------------------------------------*/
+/* VERSE SECTION */
+.verse {
+	background:#974b6b;
+	padding:2em 0;
+	text-align: center;
+}
+blockquote {
+	font-family:"Varela Round", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	padding:0;
+	margin:0;
+	border:none;
+	font-size:1.5em;
+	font-weight: 100;
+	line-height: 1.4;
+}
+.verse p {
+	color:#fe92c0;
+	font-size: 0.825em;
+}
+
+/*-----------------------------------------------------------*/
+/* CONTENT SECTION */
+.content {
+	padding:2em 0;
+}
+.btn {
+	background: #e0ca8d;
+	width:235px;
+	color:#fff;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding:0.75em 1em;
+	font-size:24px;
+	margin:0 auto;
+	text-align: center;
+	display: block;
+}
+.content .btn {
+	position:relative;
+	top:-100px;
+}
+
+/*-----------------------------------------------------------*/
+/* PRICING SECTION */
+.pricing {
+	text-align: center;
+	padding-bottom: 3em;
+}
+.pricing .one-third {
+	background: #974b6b;
+}
+.pricing h6 {
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	color:#fff;
+	padding:2em 0 0.5em;
+	margin:0;
+}
+.divider {
+	height:3px;
+	background:#e0ca8d;
+	width:150px;
+	margin:0 auto;
+	display: block;
+}
+.price {
+	color:#fff;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
+	font-size:60px;
+	margin:20px 0;
+	vertical-align: top;
+}
+.price:before {
+	content: '$';
+	font-size:24px;
+	font-family: "Merriweather", Georgia, serif;
+	vertical-align: top;
+	position: relative;
+	top:10px;
+}
+.price span {
+	display:block;
+	font-size:18px;
+}
+.pricing ul {
+	list-style-type: none;
+	margin:0 40px 20px;
+	padding:0;
+}
+.pricing ul li {
+	color:#fff;
+	text-align: left;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
+	margin:0 0 10px;
+	font-size:18px;
+	padding-left: 0.5em; 
+  text-indent: -0.8em;
+}
+.pricing ul li:before {
+    content: "\2022";
+    color: #df83a8;
+    padding-right:0.5em;
+ }
+ .pricing .btn {
+ 	margin-bottom: 1.5em;
+ }
+
+/*-----------------------------------------------------------*/
+/* TEAM SECTION */
+.team {
+	background-color: #fe92c0;
+	text-align: center;
+	padding:3em 0;
+}
+.team h2 {
+	color:#fff;
+	margin-bottom:0;
+}
+.team p {
+	color:#fff;
+}
+.team h3 {
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
+	font-size:24px;
+}
+.team h3 span {
+	font-family: "Merriweather", Georgia, serif;
+	font-size:24px;
+	display: block;
+}
+
+/*-----------------------------------------------------------*/
+/* SOCIAL SECTION */
+.social {
+	background-color: #f2c8da;
+	text-align: center;
+	padding:2em 0;
+}
+.social h2 {
+	margin-bottom: 0;
+}
+.social h6 {
+	font-weight: 500;
+	margin:0.25em 0 1em;
+}
+.social ul {
+	list-style-type: none;
+	padding: 0;
+	margin:0 0 1.5em;
+}
+.social ul li {
+	height:52px;
+	width: 52px;
+	margin:0 3em;
+	display: inline-block;
+}
+/*-----------------------------------------------------------*/
+/* FAQ SECTION */
+.faq {
+	background: url("../images/pinkbackground.png") top center no-repeat;
+	background-size: cover;
+	font-size: 24px;
+	padding:2em 0;
+}
+.faq h2 {
+	text-align: center;
+}
+.faq h5 {
+	margin:1em 0 2em;
+}
+.faq p {
+	margin-bottom:10px;
+}
+
+/*-----------------------------------------------------------*/
+/* FOOTER */
+
+footer {
+	border-top: 11px solid #fe92c0;
+	text-align: center;
+	z-index: 100;
+	position:relative;
+}
+footer nav {
+	position:relative;
+	font-family:"Varela Round", Helvetica, Arial, sans-serif;
+	height:70px;
+	z-index: 300;
+}
+footer nav ul {
+	margin:0;
+	padding:0;
+}
+footer nav ul li {
+	display:inline-block;
+	vertical-align: top;
+	padding-top: 45px;
+}
+footer .logo {
+ z-index: 2;
+ position: absolute;
+ bottom:7px;
+ left:0;
+ right:0;
+}
+footer nav ul li a {
+	font-family:"Varela Round", Helvetica, Arial, sans-serif;
+	color:#974b6b;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+footer p {
+	text-align: center;
+	font-size:16px;
+	color:#974b6b;
+}
+
+
