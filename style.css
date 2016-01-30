@@ -1,11 +1,74 @@
+p, h3 {
+	font-size: 24px;
+
+}
 h1 {
+	font-family:"Varela Round Regular", Helvetica, Arial, sans-serif;
+	font-size: 60px;
+	color: #fe92c0;
+	text-align: center;
+
+}
+
+h2{
+	font-family:"Varela Round Regular", Helvetica, Arial, sans-serif;
+	color: #974b6b;
+
+}
+
+
+h3 {
+	font-family:"Varela Round Regular", Helvetica, Arial, sans-serif;
+	color: #ffffff;
+	text-align: center;
+}
+
+h4{
+	font-family: "Merriweather Regular", Helvetica, Arial, serif;
+	font-size: 15px;
+	color: #fe92c0;
+	text-align: center;
+	}
+
+p {
+	font-family: "Merriweather Regular", Helvetica, Arial, sans-serif;
+	color:#888888;
+
+}	
+
+
+
+
+
+
+
+#main-headline {
+	background-color: #fe92c0;
 	font-size:65px;
 	font-family:"Varela Round Regular", Helvetica, Arial, sans-serif;
-	color:#;
+	color:#ffffff;
 	text-align: center;
 }
 
 
+#verse {
+	background-color: #974b6b;
 
+}
 
+#pricing {
+	text-align: center;
+}
+
+#meet_team {
+	background-color: #fe92c0;
+	text-align: center;
+
+}
+
+#social {
+	background-color: #f2c8da;
+	text-align: center;
+
+}
 
