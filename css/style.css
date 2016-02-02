@@ -101,9 +101,9 @@ p {
 nav ul li {
 	width:160px;
 }
-nav ul li:nth-child(2) {
+/*nav ul li:nth-child(2) {
 	margin-right:200px;
-}
+}*/
 
 /*-----------------------------------------------------------*/
 /* HEADER SECTION */
@@ -129,16 +129,85 @@ header nav {
 	font-family:"Varela Round", Helvetica, Arial, sans-serif;
 	z-index: 300;
 }
-nav ul {
-	list-style-type: none;
-	margin:0;
-	padding:0;
+nav .left-nav {
+	display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 1em;
+    float: left;
+  
+    
 }
-header nav ul li {
+nav .left-nav li {
 	display:inline-block;
 	vertical-align: top;
 	padding-top: 45px;
 }
+/*--nav ul {
+	list-style-type: none;
+	margin:0;
+	padding:0;
+}*/
+nav .right-nav {
+	display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 1em;
+    float: right;
+}
+
+nav .right-nav li {
+	display:inline-block;
+	vertical-align: top;
+	padding-top: 45px; 
+    
+}
+a.account {
+    line-height: 16px;
+    position: absolute;
+    z-index: 110;
+    display: block;
+    padding: 11px 0 0 20px;
+    height: 28px;
+    width: 121px;
+    margin: -11px 0 0 -10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+nav .submenu {
+	display: block;
+    background: #fff;
+    position: absolute;
+    top: -12px;
+    left: -20px;
+    z-index: 100;
+    width: 135px;
+    display: none;
+    margin-left: 10px;
+    padding: 40px 0 5px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+nav .right-nav .root li a{
+    list-style: block;
+    margin: 0px;
+    padding: 0px;
+    font-size: 11px;
+    padding: 11px 0 0 0px;
+    border-top: 1px solid #dedede;
+}
+
+
+/*nav .right-nav .submenu .root li {
+    display: inline;
+    vertical-align: middle;
+}*/
+/*header nav ul li {
+	display:inline-block;
+	vertical-align: top;
+	padding-top: 45px;
+}*/
 header nav ul li a {
 	font-family:"Varela Round", Helvetica, Arial, sans-serif;
 	color:#974b6b;
@@ -232,6 +301,7 @@ blockquote {
 }
 .pricing .one-fourth {
 	background: #974b6b;
+	min-height: 392px;
 }
 .pricing h6 {
 	font-family: "Varela Round", Helvetica, Arial, sans-serif;
@@ -403,9 +473,15 @@ footer nav {
 	height:70px;
 	z-index: 300;
 }
-footer nav ul {
+footer nav .left-nav {
 	margin:0;
+	margin-left: 130px;
 	padding:0;
+}
+
+footer nav .right-nav {
+	margin-right: 130px;
+	padding: 0;
 }
 footer nav ul li {
 	display:inline-block;

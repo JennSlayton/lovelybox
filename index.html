@@ -5,24 +5,29 @@
 		<link href='https://fonts.googleapis.com/css?family=Varela+Round|Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
+
 	</head>
 	<body>
 		<header>
 			<div class="container">
 				<h1 class="logo"><a href=""><img src="images/logo.jpg" alt="Lovely Box" /></a></h1>
 				<nav>
-					<ul>
+					<ul class="left-nav">
 						<li><a href="index.html#about">ABOUT</a></li>
 						<li><a href="index.html#team">THE TEAM</a></li>
 						<li><a href="index.html#faq">FAQs</a></li>
-						<li><a href="">BLOGS</a></li>
-							<ul>
-      							<li><a href="http://www.ruthnruth.com/blogs/news">Ruth's Blog</a></li>
-      							<li><a href="http://www.beautifulcraziness.com">Andrea's Blog</a></li>
-      						</ul>
-						<li><a href="index.html#shop">SHOP</a></li>
+					</ul>
+					<ul class="right-nav">
+						<li><a class="account" id="1">BLOGS</a></li>
+								<div class="submenu">
+      								<ul class="root">
+      									<li><a href="http://www.ruthnruth.com/blogs/news">Ruth's Blog</a></li>
+      									<li><a href="http://www.beautifulcraziness.com">Andrea's Blog</a></li>
+      								</ul>
+      							</div>	
+      					<li><a href="index.html#shop">SHOP</a></li>
 						<li><a class="nav-btn" href="https://plasso.co/s/WxZNbrrAKn">JOIN NOW!</a></li>
-						</li>	
+							
 					</ul>
 				</nav>
 			</div>
@@ -168,7 +173,7 @@
 			<section id="shop" class="shop">
 				<div class="container">
 					<h1>Shop</h1>
-					<p>Shop from our selection of Lovely Tees and T-Shirt Dresses!</p>
+					<p>Shop from our selection of Lovely Tees and T-Shirt Dresses! They are both available in black and white in sizes S, M, and L! </p>
 					<div class="one-third">
 						<img src="images/lovelyblack.png" /></div>
 					<div class="one-third">	
@@ -182,10 +187,12 @@
 		<footer>
 			<h1 class="logo"><a href=""><img src="images/footer_logo.jpg" alt="Lovely Box" /></a></h1>
 			<nav>
-				<ul>
+				<ul class="left-nav">
 					<li><a href="index.html#about">ABOUT</a></li>
 					<li><a href="index.html#team">THE TEAM</a></li>
 					<li><a href="index.html#faq">FAQs</a></li>
+				</ul>
+				<ul class="right-nav">	
 					<li><a href="">BLOGS</a></li>
 					<li><a href="index.html#shop">SHOP</a></li>
 					<li><a href="https://plasso.co/s/WxZNbrrAKn">JOIN NOW!</a></li>
