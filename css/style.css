@@ -108,10 +108,14 @@ nav ul li:nth-child(2) {
 /*-----------------------------------------------------------*/
 /* HEADER SECTION */
 header {
+	background-color: #ffffff;
 	border-bottom: 11px solid #fe92c0;
 	text-align: center;
 	z-index: 100;
 	height:100px;
+	position: fixed;
+	width: 100%;
+
 }
 header .logo {
  z-index: 2;
@@ -141,6 +145,7 @@ header nav ul li a {
 	text-transform: uppercase;
 	text-decoration: none;
 }
+
 .nav-btn {
 	background: #e0ca8d;
 	padding:0.4em 0.8em;
@@ -203,7 +208,7 @@ blockquote {
 }
 .btn {
 	background: #e0ca8d;
-	width:235px;
+	width:200px;
 	color:#fff;
 	font-family: "Varela Round", Helvetica, Arial, sans-serif;
 	text-transform: uppercase;
@@ -225,11 +230,12 @@ blockquote {
 	text-align: center;
 	padding-bottom: 3em;
 }
-.pricing .one-third {
+.pricing .one-fourth {
 	background: #974b6b;
 }
 .pricing h6 {
 	font-family: "Varela Round", Helvetica, Arial, sans-serif;
+	font-size: 21px;
 	text-transform: uppercase;
 	color:#fff;
 	padding:2em 0 0.5em;
@@ -245,7 +251,7 @@ blockquote {
 .price {
 	color:#fff;
 	font-family: "Varela Round", Helvetica, Arial, sans-serif;
-	font-size:60px;
+	font-size:42px;
 	margin:20px 0;
 	vertical-align: top;
 }
@@ -261,6 +267,10 @@ blockquote {
 	display:block;
 	font-size:18px;
 }
+.pricing h1 {
+	font-size: 42px;
+	margin-top: -50px;
+}
 .pricing ul {
 	list-style-type: none;
 	margin:0 40px 20px;
@@ -271,7 +281,7 @@ blockquote {
 	text-align: left;
 	font-family: "Varela Round", Helvetica, Arial, sans-serif;
 	margin:0 0 10px;
-	font-size:18px;
+	font-size:16px;
 	padding-left: 0.5em; 
   text-indent: -0.8em;
 }
@@ -281,7 +291,7 @@ blockquote {
     padding-right:0.5em;
  }
  .pricing .btn {
- 	margin-bottom: 1.5em;
+ 	margin: 20px auto 0;
  }
 
 /*-----------------------------------------------------------*/
@@ -352,6 +362,33 @@ blockquote {
 }
 
 /*-----------------------------------------------------------*/
+/*SHOP SECTION */
+.shop {
+	text-align: center;
+	padding:3em 0;
+}
+.shop h1 {
+	margin-bottom:0;
+}
+
+.shop-btn {
+	background: #974b6b;
+	width:200px;
+	color:#fff;
+	font-family: "Varela Round", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding:0.75em 1em;
+	font-size:24px;
+	margin:50px auto;
+	margin-bottom: 75px;
+	text-align: center;
+	display: block;
+}
+
+/*-----------------------------------------------------------*/
+
+
 /* FOOTER */
 
 footer {
