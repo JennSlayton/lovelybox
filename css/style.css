@@ -206,6 +206,36 @@ a.account {
 .dropdown .submenu ul li {
   padding:0 0 30px;
 }
+.dropup {
+  position: relative;
+}
+.dropup .submenu {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+    background: #fff;
+    bottom: -40px;
+    left: -20px;
+    z-index: 100;
+    display: none;
+    margin-left: 10px;
+    padding: 5px 0 40px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+.dropup:hover .submenu {
+  display: block;
+}
+.dropup .submenu ul {
+  padding:0;
+  margin:30px 0 0;
+}
+.dropup .submenu ul li {
+  padding:0 0 30px;
+}
 
 nav .right-nav .root li a{
     list-style: block;
